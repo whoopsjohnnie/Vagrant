@@ -1,0 +1,4 @@
+# https://app.vagrantup.com/openindiana/boxes/hipster
+Vagrant.configure("2") do |config|
+  config.vm.box = "openindiana/hipster"
+end

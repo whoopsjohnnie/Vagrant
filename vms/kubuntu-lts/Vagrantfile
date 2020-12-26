@@ -1,0 +1,4 @@
+# https://app.vagrantup.com/cerritus/boxes/kubuntu-lts
+Vagrant.configure("2") do |config|
+  config.vm.box = "cerritus/kubuntu-lts"
+end

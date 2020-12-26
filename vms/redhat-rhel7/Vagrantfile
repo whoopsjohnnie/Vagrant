@@ -1,0 +1,4 @@
+# https://app.vagrantup.com/generic/boxes/rhel7
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/rhel7"
+end

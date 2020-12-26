@@ -1,0 +1,6 @@
+# https://app.vagrantup.com/plaurin/boxes/solaris-11_3
+Vagrant.configure("2") do |config|
+  config.vm.box = "plaurin/solaris-11_3"
+  config.vm.box_version = "1"
+  config.ssh.password = "1vagrant"
+end

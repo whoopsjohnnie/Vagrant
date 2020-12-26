@@ -1,0 +1,6 @@
+# https://app.vagrantup.com/freebsd/boxes/FreeBSD-12.2-STABLE
+Vagrant.configure("2") do |config|
+  config.vm.box = "freebsd/FreeBSD-12.2-STABLE"
+  config.vm.provision "file", source: "zshrc", destination: "/home/vagrant/.zshrc"
+  config.vm.provision :shell, path: "bootstrap.sh"
+end

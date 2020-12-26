@@ -1,0 +1,13 @@
+
+autoload -U compinit promptinit
+promptinit
+compinit
+
+zstyle ':completion:*' insert-tab false
+# zstyle ':completion:*' menu select
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+# prompt
+# export PS1="\u@\h \w>"
+# export PROMPT="%n@%m %~>"
+export PROMPT="%n@%M %~>"
