@@ -1,0 +1,5 @@
+# https://app.vagrantup.com/twingly/boxes/openbsd-7.0-amd64
+Vagrant.configure("2") do |config|
+  config.vm.box = "twingly/openbsd-7.0-amd64"
+  config.vm.box_version = "1.0.0"
+end
