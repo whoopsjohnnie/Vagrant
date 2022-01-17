@@ -1,0 +1,5 @@
+# https://app.vagrantup.com/freebsd/boxes/FreeBSD-12.3-RELEASE
+Vagrant.configure("2") do |config|
+  config.vm.box = "freebsd/FreeBSD-12.3-RELEASE"
+  config.vm.box_version = "2021.12.02"
+end
