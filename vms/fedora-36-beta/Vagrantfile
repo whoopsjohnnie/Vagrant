@@ -1,0 +1,4 @@
+# https://app.vagrantup.com/fedora/boxes/36-beta-cloud-base
+Vagrant.configure("2") do |config|
+  config.vm.box = "fedora/36-beta-cloud-base"
+end
