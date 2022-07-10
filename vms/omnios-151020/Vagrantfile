@@ -1,0 +1,5 @@
+# https://app.vagrantup.com/omnios/boxes/r151020
+Vagrant.configure("2") do |config|
+  config.vm.box = "omnios/r151020"
+  config.vm.box_version = "151020.1.0"
+end
