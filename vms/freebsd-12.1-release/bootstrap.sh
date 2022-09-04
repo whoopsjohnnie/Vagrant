@@ -5,6 +5,9 @@
 # freebsd-update upgrade -r 12.1-RELEASE
 # freebsd-update install
 
+# 
+pkg install -y open-vm-tools
+
 pkg install -y zsh
 
 # pkg install -y emacs
