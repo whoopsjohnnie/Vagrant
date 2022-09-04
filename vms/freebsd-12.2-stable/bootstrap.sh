@@ -5,39 +5,60 @@
 # freebsd-update upgrade -r 12.1-RELEASE
 # freebsd-update install
 
-pkg install -y zsh
+# 
+pkg install -y open-vm-tools
+
+pkg install -y xorg
+pkg install -y xinit
+
+# WindowMaker
+# pkg install -y WindowMaker
+
+# CDE
+pkg install -y ksh93
+pkg install -y cde
+
+# CDE
+cp /home/vagrant/rc.local /etc/rc.local
+chown root.wheel /etc/rc.local || true
+chmod 755 /etc/rc.local || true
+
+# CDE
+echo "127.0.0.1 freebsd" >> /etc/hosts
 
 # pkg install -y emacs
 # pkg install -y emacs-nox
-pkg install -y mg
+# pkg install -y mg
 # pkg install -y nano
 
 # link emacs
-ln -s /usr/local/bin/mg /usr/local/bin/emacs
+# ln -s /usr/local/bin/mg /usr/local/bin/emacs
 
-pkg install -y python27
-pkg install -y py27-pip
-pkg install -y py27-virtualenv
+# pkg install -y python27
+# pkg install -y py27-pip
+# pkg install -y py27-virtualenv
 
-pkg install -y python37
-pkg install -y py37-pip
-pkg install -y py37-virtualenv
+# pkg install -y python37
+# pkg install -y py37-pip
+# pkg install -y py37-virtualenv
 
-rm -f /usr/local/bin/python
-# ln -s /usr/local/bin/python3.7 /usr/local/bin/python3
-ln -s /usr/local/bin/python3.7 /usr/local/bin/python
+# rm -f /usr/local/bin/python
+# # ln -s /usr/local/bin/python3.7 /usr/local/bin/python3
+# ln -s /usr/local/bin/python3.7 /usr/local/bin/python
 
-rm -f /usr/local/bin/pip
-# ln -s /usr/local/bin/pip-3.7 /usr/local/bin/pip3
-ln -s /usr/local/bin/pip-3.7 /usr/local/bin/pip
+# rm -f /usr/local/bin/pip
+# # ln -s /usr/local/bin/pip-3.7 /usr/local/bin/pip3
+# ln -s /usr/local/bin/pip-3.7 /usr/local/bin/pip
 
-rm -f /usr/local/bin/virtualenv
-# ln -s /usr/local/bin/virtualenv-3.7 /usr/local/bin/virtualenv3
-ln -s /usr/local/bin/virtualenv-3.7 /usr/local/bin/virtualenv
+# rm -f /usr/local/bin/virtualenv
+# # ln -s /usr/local/bin/virtualenv-3.7 /usr/local/bin/virtualenv3
+# ln -s /usr/local/bin/virtualenv-3.7 /usr/local/bin/virtualenv
 
-/usr/local/bin/python --version
-/usr/local/bin/pip --version
-/usr/local/bin/virtualenv --version
+# /usr/local/bin/python --version
+# /usr/local/bin/pip --version
+# /usr/local/bin/virtualenv --version
+
+pkg install -y zsh
 
 # cat << EOF > /home/vagrant/.zshrc
 # 
